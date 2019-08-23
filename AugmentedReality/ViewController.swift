@@ -15,6 +15,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    
+    @IBAction func magicDice(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToDice", sender: self)
+    }
+    
+    @IBAction func magicScale(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToScale", sender: self)
+    }
+    
+    @IBAction func magicNewspaper(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToNewspaper", sender: self)
+    }
+    
 }
 
