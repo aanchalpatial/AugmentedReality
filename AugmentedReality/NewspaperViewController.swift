@@ -19,17 +19,25 @@ class NewspaperViewController: UIViewController, ARSCNViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        sceneView.delegate = self
+        sceneView.showsStatistics = true
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Create a session configuration
+        let configuration = ARWorldTrackingConfiguration()
+        
+        // Run the view's session
+        sceneView.session.run(configuration)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Pause the view's session
+        sceneView.session.pause()
     }
-    */
 
 }

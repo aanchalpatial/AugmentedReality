@@ -67,7 +67,7 @@ class DiceViewController: UIViewController , ARSCNViewDelegate{
         let plane = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
         
         let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "")
+        material.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
         plane.materials = [material]
         
         let planeNode = SCNNode()
