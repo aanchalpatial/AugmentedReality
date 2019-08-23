@@ -120,8 +120,8 @@ class DiceViewController: UIViewController , ARSCNViewDelegate{
     @IBAction func removeAllNodes(_ sender: UIBarButtonItem) {
         for node in nodeArray {
             node.removeFromParentNode()
-            nodeArray.removeFirst()
         }
+        nodeArray = [SCNNode]()
     }
     
     @IBAction func rotateAllNodes(_ sender: UIBarButtonItem) {
