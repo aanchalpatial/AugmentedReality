@@ -12,6 +12,10 @@
 		0D6548C323100AD3006698DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6548C123100AD3006698DC /* Main.storyboard */; };
 		0D6548C523100AEE006698DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6548C423100AEE006698DC /* Assets.xcassets */; };
 		0D6548C823100AEE006698DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6548C623100AEE006698DC /* LaunchScreen.storyboard */; };
+		0D6548D023103B53006698DC /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6548CF23103B53006698DC /* DiceViewController.swift */; };
+		0D6548D223103B7C006698DC /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6548D123103B7C006698DC /* ScaleViewController.swift */; };
+		0D6548D423103B94006698DC /* NewspaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6548D323103B94006698DC /* NewspaperViewController.swift */; };
+		0D6548D72310406B006698DC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6548D62310406A006698DC /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		0D6548C423100AEE006698DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D6548C723100AEE006698DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D6548C923100AEE006698DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6548CF23103B53006698DC /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		0D6548D123103B7C006698DC /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScaleViewController.swift; path = ../ScaleViewController.swift; sourceTree = "<group>"; };
+		0D6548D323103B94006698DC /* NewspaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewspaperViewController.swift; path = ../NewspaperViewController.swift; sourceTree = "<group>"; };
+		0D6548D62310406A006698DC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,25 @@
 			isa = PBXGroup;
 			children = (
 				0D6548BD23100AD3006698DC /* AppDelegate.swift */,
-				0D6548BF23100AD3006698DC /* ViewController.swift */,
+				0D6548D523103BAB006698DC /* Controller */,
 				0D6548C123100AD3006698DC /* Main.storyboard */,
+				0D6548D62310406A006698DC /* art.scnassets */,
 				0D6548C423100AEE006698DC /* Assets.xcassets */,
 				0D6548C623100AEE006698DC /* LaunchScreen.storyboard */,
 				0D6548C923100AEE006698DC /* Info.plist */,
 			);
 			path = AugmentedReality;
+			sourceTree = "<group>";
+		};
+		0D6548D523103BAB006698DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D6548BF23100AD3006698DC /* ViewController.swift */,
+				0D6548CF23103B53006698DC /* DiceViewController.swift */,
+				0D6548D123103B7C006698DC /* ScaleViewController.swift */,
+				0D6548D323103B94006698DC /* NewspaperViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6548C823100AEE006698DC /* LaunchScreen.storyboard in Resources */,
+				0D6548D72310406B006698DC /* art.scnassets in Resources */,
 				0D6548C523100AEE006698DC /* Assets.xcassets in Resources */,
 				0D6548C323100AD3006698DC /* Main.storyboard in Resources */,
 			);
@@ -136,7 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6548C023100AD3006698DC /* ViewController.swift in Sources */,
+				0D6548D023103B53006698DC /* DiceViewController.swift in Sources */,
 				0D6548BE23100AD3006698DC /* AppDelegate.swift in Sources */,
+				0D6548D223103B7C006698DC /* ScaleViewController.swift in Sources */,
+				0D6548D423103B94006698DC /* NewspaperViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
