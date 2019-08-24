@@ -28,5 +28,8 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "goToNewspaper", sender: self)
     }
     
+    @IBAction func magicPokemon(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToPokemon", sender: self)
+    }
 }
 

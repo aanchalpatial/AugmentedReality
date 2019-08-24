@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="qM6-g4-vVC">
-                                <rect key="frame" x="56" y="136.5" width="208" height="295"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="qM6-g4-vVC">
+                                <rect key="frame" x="56" y="115" width="208" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voG-ek-OZU">
                                         <rect key="frame" x="0.0" y="0.0" width="208" height="47"/>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSH-Xw-r9C">
-                                        <rect key="frame" x="0.0" y="124" width="208" height="47"/>
+                                        <rect key="frame" x="0.0" y="97" width="208" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                         <state key="normal" title="Magic Scale">
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo6-yj-NRt">
-                                        <rect key="frame" x="0.0" y="248" width="208" height="47"/>
+                                        <rect key="frame" x="0.0" y="194" width="208" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                         <state key="normal" title="Magic Newspaper">
@@ -52,6 +52,17 @@
                                         </state>
                                         <connections>
                                             <action selector="magicNewspaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YqS-0A-g7S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOJ-3f-tHG">
+                                        <rect key="frame" x="0.0" y="291" width="208" height="47"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                        <state key="normal" title="Magic Pokemon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="magicPokemon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u02-6U-ICX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -69,6 +80,7 @@
                         <segue destination="WWc-Al-2X7" kind="show" identifier="goToDice" id="W6o-Za-lcW"/>
                         <segue destination="4QB-4m-23O" kind="show" identifier="goToScale" id="2Da-HK-P3E"/>
                         <segue destination="8mj-tr-yIG" kind="show" identifier="goToNewspaper" id="su6-p7-QyJ"/>
+                        <segue destination="96q-Ah-oFr" kind="show" identifier="goToPokemon" id="wdU-IW-2pK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -116,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFL-gQ-swA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1627.5" y="0.0"/>
+            <point key="canvasLocation" x="1650" y="-1185"/>
         </scene>
         <!--Newspaper-->
         <scene sceneID="hMd-do-jH3">
@@ -146,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVj-09-4Jq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650" y="647.53521126760563"/>
+            <point key="canvasLocation" x="1650" y="248"/>
         </scene>
         <!--Scale-->
         <scene sceneID="vYE-n9-xh0">
@@ -176,7 +188,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snQ-aw-2Ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2283.75" y="102.46478873239437"/>
+            <point key="canvasLocation" x="1650" y="-473"/>
+        </scene>
+        <!--Pokemon-->
+        <scene sceneID="jDe-CS-PW0">
+            <objects>
+                <viewController id="96q-Ah-oFr" customClass="PokemonViewController" customModule="AugmentedReality" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D52-9X-zsd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVk-ae-ycf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cVk-ae-ycf" firstAttribute="bottom" secondItem="e8c-Ka-nbD" secondAttribute="bottom" id="DFg-ts-60O"/>
+                            <constraint firstItem="cVk-ae-ycf" firstAttribute="top" secondItem="D52-9X-zsd" secondAttribute="top" id="IT4-hC-R7X"/>
+                            <constraint firstItem="cVk-ae-ycf" firstAttribute="trailing" secondItem="e8c-Ka-nbD" secondAttribute="trailing" id="hKq-aH-yvD"/>
+                            <constraint firstItem="cVk-ae-ycf" firstAttribute="leading" secondItem="e8c-Ka-nbD" secondAttribute="leading" id="mtd-au-rG5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e8c-Ka-nbD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pokemon" id="1cy-7k-xPX"/>
+                    <connections>
+                        <outlet property="sceneView" destination="cVk-ae-ycf" id="Ldx-AP-nT3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSl-Em-aHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650" y="998"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4ak-2z-e0r">
