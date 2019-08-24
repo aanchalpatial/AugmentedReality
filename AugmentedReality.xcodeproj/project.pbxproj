@@ -81,8 +81,8 @@
 				0D6548BF23100AD3006698DC /* ViewController.swift */,
 				0D6548CF23103B53006698DC /* DiceViewController.swift */,
 				0D6548D123103B7C006698DC /* ScaleViewController.swift */,
-				0D6548D323103B94006698DC /* NewspaperViewController.swift */,
 				0D17914F2310667600A7EE40 /* PokemonViewController.swift */,
+				0D6548D323103B94006698DC /* NewspaperViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

@@ -45,4 +45,23 @@ class PokemonViewController: UIViewController , ARSCNViewDelegate{
         sceneView.session.pause()
     }
     
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        let node = SCNNode()
+        if let imageAnchor = anchor as? ARImageAnchor {
+            let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height)
+            plane.firstMaterial?.diffuse.contents = UIColor(white: 1.0, alpha: 0.3)
+            let planeNode = SCNNode(geometry: plane)
+            //planeNode.transform = SCNMatrix4MakeRotation(-Float.pi/2, 1, 0, 0)
+            //why not above line
+            planeNode.eulerAngles.x = -.pi/2
+            node.addChildNode(planeNode)
+        
+        }
+        return node
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        <#code#>
+    }
+    
 }
