@@ -22,16 +22,17 @@ class PokemonViewController: UIViewController , ARSCNViewDelegate{
         self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         sceneView.delegate = self
         sceneView.showsStatistics = true
+        sceneView.autoenablesDefaultLighting = true
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARImageTrackingConfiguration()
+        let configuration = ARWorldTrackingConfiguration()
         
         if let imagesToLookFor = ARReferenceImage.referenceImages(inGroupNamed: "Pokemon Cards", bundle: Bundle.main) {
-            configuration.trackingImages = imagesToLookFor
-            configuration.maximumNumberOfTrackedImages = 1
+            configuration.detectionImages = imagesToLookFor
+            configuration.maximumNumberOfTrackedImages = 3
         }
         
         // Run the view's session
@@ -48,6 +49,9 @@ class PokemonViewController: UIViewController , ARSCNViewDelegate{
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         let node = SCNNode()
         if let imageAnchor = anchor as? ARImageAnchor {
+            
+            let pokemonName = imageAnchor.referenceImage.name
+            
             let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height)
             plane.firstMaterial?.diffuse.contents = UIColor(white: 1.0, alpha: 0.3)
             let planeNode = SCNNode(geometry: plane)
@@ -55,13 +59,16 @@ class PokemonViewController: UIViewController , ARSCNViewDelegate{
             //why not above line
             planeNode.eulerAngles.x = -.pi/2
             node.addChildNode(planeNode)
-        
+            
+            if let pokemonScene = SCNScene(named: "art.sznassets/\(pokemonName).scn"){
+                if let pokemonNode = pokemonScene.rootNode.childNodes.first {
+                    pokemonNode.eulerAngles.x = .pi/2
+                    planeNode.addChildNode(pokemonNode)
+                }
+            }
         }
         return node
     }
     
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        <#code#>
-    }
     
 }
