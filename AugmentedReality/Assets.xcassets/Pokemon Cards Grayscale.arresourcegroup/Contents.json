@@ -1,0 +1,29 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "resources" : [
+    {
+      "filename" : "bulbasaur.arreferenceimage"
+    },
+    {
+      "filename" : "charizard.arreferenceimage"
+    },
+    {
+      "filename" : "charmander.arreferenceimage"
+    },
+    {
+      "filename" : "jigglypuff.arreferenceimage"
+    },
+    {
+      "filename" : "pikachu.arreferenceimage"
+    },
+    {
+      "filename" : "snorlax.arreferenceimage"
+    },
+    {
+      "filename" : "squirtle.arreferenceimage"
+    }
+  ]
+}
