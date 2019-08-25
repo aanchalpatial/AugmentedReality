@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D09342923127A510047441D /* potter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D09342823127A510047441D /* potter.mp4 */; };
 		0D1791502310667600A7EE40 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D17914F2310667600A7EE40 /* PokemonViewController.swift */; };
 		0D6548BE23100AD3006698DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6548BD23100AD3006698DC /* AppDelegate.swift */; };
 		0D6548C023100AD3006698DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6548BF23100AD3006698DC /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D09342823127A510047441D /* potter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = potter.mp4; path = Resources/magic_newspaper/potter.mp4; sourceTree = SOURCE_ROOT; };
 		0D17914F2310667600A7EE40 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		0D6548BA23100AD3006698DC /* AugmentedReality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedReality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6548BD23100AD3006698DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		0D6548BC23100AD3006698DC /* AugmentedReality */ = {
 			isa = PBXGroup;
 			children = (
+				0D09342823127A510047441D /* potter.mp4 */,
 				0D6548BD23100AD3006698DC /* AppDelegate.swift */,
 				0D6548D523103BAB006698DC /* Controller */,
 				0D6548C123100AD3006698DC /* Main.storyboard */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6548C823100AEE006698DC /* LaunchScreen.storyboard in Resources */,
+				0D09342923127A510047441D /* potter.mp4 in Resources */,
 				0D6548D72310406B006698DC /* art.scnassets in Resources */,
 				0D6548C523100AEE006698DC /* Assets.xcassets in Resources */,
 				0D6548C323100AD3006698DC /* Main.storyboard in Resources */,
